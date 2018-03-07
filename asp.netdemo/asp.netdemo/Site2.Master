@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="DemoWebApplication2.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="1">
+            <tr><td colspan="2" style="width:1000px; text-align: center; background-color:blueviolet"><h2> Page Header</h2></td></tr>
+            
+            <tr><td style="width:25%;height:500px; background-color:aquamarine">Menu</td><td style="width:75%">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td></tr>
+
+            <tr><td colspan="2" style="width:1000px; text-align: center; background-color:blueviolet"><h3> Page Footer</h3></td></tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
